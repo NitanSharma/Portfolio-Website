@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Project from "./pages/Project";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 const App = () => {
   return (
