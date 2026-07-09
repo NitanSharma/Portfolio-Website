@@ -3,6 +3,27 @@
 const Home = () => {
   return (
     <div className="min-h-screen bg-[#ffdd55]">
+      <header className="bg-black text-white rounded-b-[40px] px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-0">
+        <div className="flex items-center gap-2 justify-center sm:justify-start">
+          <div className="bg-[#ffdd55] text-black rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl">
+            NI3
+          </div>
+        </div>
+        <nav className="flex flex-wrap justify-center gap-5 text-base sm:text-lg font-semibold">
+          <a href="/" className="hover:text-[#ffdd55] transition">
+            Home
+          </a>
+          <a href="/about" className="hover:text-[#ffdd55] transition">
+            About
+          </a>
+          <a href="/project" className="hover:text-[#ffdd55] transition">
+            Projects
+          </a>
+          <a href="/contact" className="hover:text-[#ffdd55] transition">
+            Contact us
+          </a>
+        </nav>
+      </header>
       {/* Main Content */}
       <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 md:py-20 gap-10 md:gap-16">
         {/* Left Section */}
