@@ -35,8 +35,8 @@ const Project = () => {
   return (
     <div className="bg-[#ffdd55] flex flex-col gap-2">
       <div className="p-5 flex flex-col gap-4">
-        <h1 className="text-3xl font-bold">My Project</h1>
-        <p className="text-lg font-semibold">
+        <h1 className="text-4xl font-bold mb-5">My Project</h1>
+        <p className="text-lg font-semibold my-2">
           Here are some of the projet <br />
           I've work on.
         </p>
