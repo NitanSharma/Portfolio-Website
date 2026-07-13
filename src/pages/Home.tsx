@@ -1,15 +1,21 @@
-
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Home = () => {
+
+
+  const showNavLink = () => {
+    
+  }
+
   return (
     <div className="min-h-screen bg-[#ffdd55]">
-      <header className="bg-black text-white rounded-b-[40px] px-6 py-4 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-0">
-        <div className="flex items-center gap-2 justify-center sm:justify-start">
+      <header className="bg-black text-white rounded-b-[40px] px-6 py-4 flex justify-around items-center">
+        <div className="flex items-center">
           <div className="bg-[#ffdd55] text-black rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl">
             NI3
           </div>
         </div>
-        <nav className="flex flex-wrap justify-center gap-5 text-base sm:text-lg font-semibold">
+        <nav className="flex flex-wrap justify-center gap-5 text-base sm:text-lg font-semibold invisible lg:visible">
           <a href="/" className="hover:text-[#ffdd55] transition">
             Home
           </a>
@@ -23,6 +29,9 @@ const Home = () => {
             Contact us
           </a>
         </nav>
+
+        <GiHamburgerMenu className="text-3xl text-white hover:text-[#ffdd55] lg:invisible" />
+
       </header>
       {/* Main Content */}
       <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 md:py-20 gap-10 md:gap-16">

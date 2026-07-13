@@ -30,14 +30,17 @@ const Project = () => {
       tech: ["Node.js", "Stream Chat", "NeonDB"],
       url: "https://chat-ai-ui-nine.vercel.app/",
     },
+    
   ];
 
   return (
-    <div className="bg-[#ffdd55] flex flex-col gap-2">
-      <div className="p-5 flex flex-col gap-4">
-        <h1 className="text-4xl font-bold mb-5">My Project</h1>
-        <p className="text-lg font-semibold my-2">
-          Here are some of the projet <br />
+    <div className="bg-[#ffdd55] flex flex-col gap-2 lg:flex-row">
+
+      {/* left Section */}
+      <div className="p-8 flex flex-col gap-2 lg:h-screen justify-center">
+        <h1 className="text-4xl font-bold mb-5 lg:text-6xl">My Project</h1>
+        <p className="text-xl font-semibold my-2 lg:text-2xl">
+          Here are some of the project <br />
           I've work on.
         </p>
         <a href="https://github.com/NitanSharma">
@@ -47,10 +50,12 @@ const Project = () => {
         </a>
       </div>
 
+    {/* Right Section */}
+    <div className="flex flex-wrap lg:mt-8">
       {projects.map((project) => (
         <a href={project.url}>
           <div key={project.id} className="bg-[#FDEFC1] rounded-2xl m-4">
-            <img src={project.img} alt="projectimage" className="rounded-2xl" />
+            <img src={project.img} alt="projectimage" className="rounded-2xl lg:h-40" />
             <h2 className="text-2xl font-bold mt-3 px-2">{project.name}</h2>
             <div className="flex gap-5 flex-wrap p-3">
               {project.tech.map((i) => (
@@ -62,6 +67,8 @@ const Project = () => {
           </div>
         </a>
       ))}
+</div>
+
     </div>
   );
 };
