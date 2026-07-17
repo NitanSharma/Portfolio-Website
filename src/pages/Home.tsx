@@ -2,11 +2,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Home = () => {
 
-
-  const showNavLink = () => {
-    
-  }
-
   return (
     <div className="min-h-screen bg-[#ffdd55]">
       <header className="bg-black text-white rounded-b-[40px] px-6 py-4 flex justify-around items-center">
