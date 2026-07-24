@@ -3,12 +3,16 @@ import { FaLaptopCode } from "react-icons/fa";
 import { PiCoffeeFill } from "react-icons/pi";
 import { FaRocket } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
+import Header from "../components/Header";
+
+
 
 const About = () => {
   return (
-    <div className="bg-[#ffdd55] flex flex-col p-5">
+    <div className="bg-[#ffdd55] flex flex-col">
+      <Header/>
       {/* About Section and Avatar */}
-      <div className="flex flex-col lg:flex-row lg:h-screen lg:justify-around lg:items-center">
+      <div className="flex flex-col lg:flex-row lg:h-screen lg:justify-around lg:items-center mt-3">
         <div className="px-5 lg:h-150 lg:w-100 flex flex-col">
           <h1 className="text-4xl font-bold mb-5 lg:text-6xl">About Me</h1>
           <p className="text-xl font-semibold my-2">
@@ -39,7 +43,7 @@ const About = () => {
         </div>
       </div>
       {/* Skill Section */}
-      <div className="bg-[#FDEFC1] mt-4 flex flex-col rounded-lg p-3">
+      <div className="bg-[#FDEFC1] mt-4 flex flex-col rounded-lg p-5 m-5">
         <h1 className="text-2xl font-bold">Skills</h1>
         <ul className="mt-2">
           <li className="text-lg font-semibold ">React</li>
@@ -51,7 +55,7 @@ const About = () => {
       </div>
 
 {/* About Section 3 */}
-      <div className="mt-4 bg-[#FDEFC1] flex flex-col rounded-lg p-3">
+      <div className="mt-4 bg-[#FDEFC1] flex flex-col rounded-lg p-3 m-5">
         <div className="flex justify-around py-3">
           <div className="flex flex-col">
             <FaCode className="self-center text-2xl" />
