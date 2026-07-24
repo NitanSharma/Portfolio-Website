@@ -1,7 +1,6 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Home = () => {
-
   return (
     <div className="min-h-screen bg-[#ffdd55]">
       <header className="bg-black text-white rounded-b-[40px] px-6 py-4 flex justify-around items-center">
@@ -26,7 +25,6 @@ const Home = () => {
         </nav>
 
         <GiHamburgerMenu className="text-3xl text-white hover:text-[#ffdd55] lg:invisible" />
-
       </header>
       {/* Main Content */}
       <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 md:py-20 gap-10 md:gap-16">
@@ -42,9 +40,12 @@ const Home = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-8">
-            <button className="bg-black text-[#ffdd55] px-8 py-3 rounded-full font-bold text-base sm:text-lg hover:bg-gray-800 transition w-full sm:w-auto">
-              Hire me
-            </button>
+            <a href="/contact">
+              <button className="bg-black text-[#ffdd55] px-8 py-3 rounded-full font-bold text-base sm:text-lg hover:bg-gray-800 transition w-full sm:w-auto">
+                Hire me
+              </button>
+            </a>
+
             <a
               href="/Nitin_Sharma_CV.pdf"
               download
